@@ -21,7 +21,7 @@ RUN echo "deb http://cran.rstudio.com/bin/linux/ubuntu precise/" >> /etc/apt/sou
   apt-get install -yqq r-base
 
 # For testthat - generating pdf file
-RUN apt-get install -yqq texlive-latex-full
+RUN apt-get install -yqq texlive
 
 # Downloading iregnet
 RUN mkdir -p /opt/code/  && cd /opt/code/ && \
