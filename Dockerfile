@@ -44,13 +44,5 @@ RUN cd /opt/code/iregnet && Rscript -e 'deps <- devtools::dev_package_deps(depen
 
 # Run Testthat
 RUN cd /opt/code/iregnet && R CMD check .
-# Expose default port
-# expose 8000
-# ADD bin/$ARCH-install.sh /opt/neural-networks/install.sh
-# ADD bin/$ARCH-run.sh /opt/neural-networks/run.sh
-# ADD bin/train.sh /opt/neural-networks/train.sh
-# ADD bin/prep.sh /opt/neural-networks/prep.sh
-# ADD bin/prep.py /opt/neural-networks/prep.py
-
 
 CMD [ "/bin/bash"]
